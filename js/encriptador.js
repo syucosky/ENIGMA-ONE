@@ -1,8 +1,8 @@
 var botonEncriptar = document.querySelector("#encriptar-codigo");
 var resultado = document.querySelector("#resultado");
 
-botonEncriptar.addEventListener("click",function(){
-
+botonEncriptar.addEventListener("click",function(event){
+    event.preventDefault();
     var codigo = document.querySelector("#codigo").value;
     var arrayCodidgo = Array.from(codigo);
 

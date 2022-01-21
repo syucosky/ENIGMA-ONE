@@ -1,8 +1,8 @@
 var botonDesencriptar = document.querySelector("#desencriptar-codigo");
 var resultado = document.querySelector("#resultado");
 
-botonDesencriptar.addEventListener("click",function(){
-    
+botonDesencriptar.addEventListener("click",function(event){
+    event.preventDefault();
     var codigo = document.querySelector("#codigo").value;
     var arrayCodigo = Array.from(codigo);
     
