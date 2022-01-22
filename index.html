@@ -9,18 +9,22 @@
 </head>
 <body>
     <header>
-        <h1>ENIGMA ENCRIPTADOR-DESENCRIPTADOR</h1>
-        <h2>Solo usar minusculas, sin acentos ni caracteres especiales.</h2>
+        <h1>ENIGMA <br> </h1>
+        <h2>ENCRIPTADOR - DESENCRIPTADOR</h2>
+        <h3>Solo usar minusculas, sin acentos ni caracteres especiales.</h3>
     </header>
-    <input type="text" name="codigo" id="codigo">
-
+    <input type="text" name="codigo" id="codigo" class="box-input" placeholder="Escriba aqui su codigo">
+    <br>
     <button id="encriptar-codigo" > Encriptar Codigo </button>
+    <button id="desencriptar-codigo" > Desencriptar Codigo </button><br>
+    <br>
+    <br>
+    <input type="text" id="resultado" name="resultado"  readonly="readonly" class="box-input" placeholder="Resultado"><br>
+    
 
-    <button id="desencriptar-codigo" > Desencriptar Codigo </button>
+    
 
-    <input type="text" id="resultado" name="resultado"  readonly="readonly">
-
-    <button id="copiar" > Copiar </button>
+    <button id="copiar" > Copiar codigo </button>
     
 
 
@@ -28,5 +32,8 @@
     <script src="js/encriptador.js"></script>
     <script src="js/desencriptador.js"></script>
     <script src="js/boton-copiar.js"></script>
+    <footer>
+        <p>Copyright © 2022 Sebastián Yucosky<br>   
+    </footer>
 </body>
 </html>
