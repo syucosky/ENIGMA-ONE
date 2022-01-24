@@ -1,16 +1,19 @@
 var botonDesencriptar = document.querySelector("#desencriptar-codigo");
 var resultado = document.querySelector("#resultado");
+var error = document.querySelector("#error");
 
 botonDesencriptar.addEventListener("click",function(event){
     event.preventDefault();
     var codigo = document.querySelector("#codigo").value;
     var arrayCodigo = Array.from(codigo);
     
-    resultado.value = desencriptador(arrayCodigo);
+    if (validarTexto(arrayCodigo)){
+        error.classList.add("mensaje-error");
+        resultado.value = desencriptador(arrayCodigo);
+    }else{
+        error.classList.remove("mensaje-error");
+   }
 });
-
-
-
 
 function desencriptador(codigo){
     var codDesencriptado = "";

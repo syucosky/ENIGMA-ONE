@@ -3,34 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador ENIGMA </title>
     <link rel="stylesheet" type="text/css"  href="css/index.css">
+    
 </head>
 <body>
+        <h1>ENIGMA</h1>
+        <h2>ENCRIPTADOR - DESENCRIPTADOR</h2>
+        <span><h3>Solo aceptara textos sin acentos ni caracteres especiales.</h3></span>
+    
 
-    <h1>ENIGMA</h1>
 
-    <h2>ENCRIPTADOR - DESENCRIPTADOR</h2>
-
-    <h3>Solo usar minusculas, sin acentos ni caracteres especiales.</h3>
-
-    <input type="text" name="codigo" id="codigo" class="box-input" placeholder="Escriba aqui su codigo"><br>
+    <input type="text" name="codigo" id="codigo" class="box-input" placeholder="Escriba aquí su texto"><br>
 
     
-    <button id="encriptar-codigo" > Encriptar Codigo </button>
-    <button id="desencriptar-codigo" > Desencriptar Codigo </button><br><br>
+    <button id="encriptar-codigo" class="btn"> Encriptar texto </button>
+    <button id="desencriptar-codigo" class="btn1"> Desencriptar texto </button><span id="error" class="mensaje-error">"!!!Error, solo se permiten letras sin acentos ni caracteres especiales¡¡¡"</span>
 
     
     <input type="text" id="resultado" name="resultado"  readonly="readonly" class="box-input" placeholder="Resultado"><br>
 
-    <button id="copiar" > Copiar codigo </button>
+    <button id="copiar" class="btn"> Copiar texto </button>
     
     <script src="js/btn-encriptador.js"></script>
     <script src="js/btn-desencriptador.js"></script>
     <script src="js/btn-copiar.js"></script>
     <footer>
-        <p>Copyright © 2022 Sebastián Yucosky<br>   
+        <p>Copyright © 2022 <a href="https://www.linkedin.com/in/syucosky/"> Sebastián Yucosky</a>
     </footer>
 </body>
 </html>
